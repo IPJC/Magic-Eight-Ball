@@ -42,8 +42,6 @@ main #textinput{
      justify-content: center;
 }
 
-
-
 #formbuttons{
      display: flex;
      flex-direction: row;
@@ -145,4 +143,58 @@ button{
 footer a, footer span{
      color: grey;
      font-size: 1rem;
+}
+
+/******************************************
+/* Smartphone
+/*******************************************/
+@media all and (max-width: 736px){
+     html{
+          line-height: 2;
+     }
+     main{
+          width: 90%;
+     }
+     #form{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+     #formbuttons{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+     button{
+          width: 60px;
+     }
+     #viewQuestion {
+          font-size: 2rem;
+     }
+     #viewAnswer {
+          line-height: 1.15;
+          padding: 11%;
+     }
+     #outputimg {
+          padding-top: 10%;
+          padding-bottom: 20%;
+     }
+     
+     h1{
+          font-size: 3rem;
+     }
+     footer{
+          line-height: 1;
+          font-size: .8rem;
+          padding-top: 10%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+     }
+     footer > span{
+          text-align: right;
+     }
+
 }
